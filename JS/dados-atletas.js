@@ -32,7 +32,9 @@ class Atleta {
     }
 
     calculaIMC() {
-
+        let imc = 0
+        imc = this.peso / (this.altura * this.altura)
+        return imc
     }
 
     calculaMediaValida() {
@@ -68,5 +70,6 @@ class Atleta {
     }
 }
 
-const AtletaAndre = new Atleta("André", 28, 65, 1.50, [10, 9, 8, 5, 7])
-console.log("Categoria do Atleta:", AtletaAndre.calculaCategoria());
+const atletaAndre = new Atleta("André", 28, 65, 1.50, [10, 9, 8, 5, 7])
+console.log("Categoria do Atleta:", atletaAndre.calculaCategoria())
+console.log("IMC do atleta:", atletaAndre.calculaIMC())
