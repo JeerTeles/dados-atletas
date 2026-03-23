@@ -38,7 +38,15 @@ class Atleta {
     }
 
     calculaMediaValida() {
+        this.nota.sort((a, b) => a - b);
 
+        let notasComputadas = this.nota.slice(1, 4);
+        let soma = 0;
+        notasComputadas.forEach(function(nota) {
+            soma += nota;
+        });
+
+        return soma / notasComputadas.length
     }
 
     obtemNomeAtleta() {
@@ -73,3 +81,4 @@ class Atleta {
 const atletaAndre = new Atleta("André", 28, 65, 1.50, [10, 9, 8, 5, 7])
 console.log("Categoria do Atleta:", atletaAndre.calculaCategoria())
 console.log("IMC do atleta:", atletaAndre.calculaIMC())
+console.log("Media do atleta:", atletaAndre.calculaMediaValida())
