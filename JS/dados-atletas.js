@@ -8,10 +8,26 @@ class Atleta {
     }
 
     calculaCategoria() {
-        if(this.idade >= 9 && this.idade <= 11) {
-            return "Infantil"
-        } else if (this.idade > 11) {
-            return "Adulto"
+        let categoria = "..."
+        if(this.idade < 9 || this.idade > 30) {
+            categoria = "Sem categoria"
+            return categoria
+        }
+        else if(this.idade >= 9 && this.idade <= 11) {
+            categoria = "Infantil"
+            return categoria
+        } 
+        else if(this.idade >= 12 && this.idade <= 13) {
+            categoria = "Juvenil"
+            return categoria
+        } 
+        else if(this.idade >= 14 && this.idade <= 15) {
+            categoria = "Intermediário"
+            return categoria
+        }
+        else if(this.idade >= 16 && this.idade <= 30) {
+            categoria = "Adulto"
+            return categoria
         }
     }
 
@@ -52,5 +68,5 @@ class Atleta {
     }
 }
 
-const AtletaAndre = new Atleta("André", 10, 65, 1.50, [10, 9, 8, 5, 7])
+const AtletaAndre = new Atleta("André", 28, 65, 1.50, [10, 9, 8, 5, 7])
 console.log("Categoria do Atleta:", AtletaAndre.calculaCategoria());
