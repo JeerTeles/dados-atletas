@@ -50,7 +50,7 @@ class Atleta {
     }
 
     obtemNomeAtleta() {
-
+        return this.nome
     }
 
     obtemIdadeAtleta() {
@@ -79,6 +79,8 @@ class Atleta {
 }
 
 const atletaAndre = new Atleta("André", 28, 65, 1.50, [10, 9, 8, 5, 7])
+console.log("------- Dados do atleta -----------")
+console.log("Nome do atleta:", atletaAndre.obtemNomeAtleta())
 console.log("Categoria do Atleta:", atletaAndre.calculaCategoria())
 console.log("IMC do atleta:", atletaAndre.calculaIMC())
 console.log("Media do atleta:", atletaAndre.calculaMediaValida())
