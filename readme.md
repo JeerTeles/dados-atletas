@@ -26,3 +26,10 @@ Este projeto utiliza **Programação Orientada a Objetos** em JavaScript para ge
 * **Classes e Objetos:** Estrutura principal do código.
 * **Lógica de Array:** Uso de `sort()`, `slice()` e `forEach()`.
 * **Template Strings:** Para exibição de dados formatados no console.
+
+## 💻 Como Usar
+
+1. Clone este repositório ou copie o código da classe.
+2. Instancie um novo atleta passando os parâmetros:
+   ```javascript
+   const meuAtleta = new Atleta("Nome", idade, peso, altura, [notas]);
