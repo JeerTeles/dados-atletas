@@ -39,6 +39,7 @@ Este projeto utiliza **Programação Orientada a Objetos** em JavaScript para ge
     node seu_arquivo.js
 
 📝 Exemplo de Saída no Console
+Plaintext
 ------- Dados do atleta -----------
 Nome: Cesar Abascal
 Idade: 30
