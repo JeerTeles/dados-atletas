@@ -54,15 +54,15 @@ class Atleta {
     }
 
     obtemIdadeAtleta() {
-
+        return this.idade
     }
 
     obtemPesoAtleta() {
-
+        return this.peso
     }
 
     obtemNotasAtleta() {
-
+        return this.nota
     }
 
     obtemCategoria() {
@@ -81,6 +81,9 @@ class Atleta {
 const atletaAndre = new Atleta("André", 28, 65, 1.50, [10, 9, 8, 5, 7])
 console.log("------- Dados do atleta -----------")
 console.log("Nome do atleta:", atletaAndre.obtemNomeAtleta())
+console.log("Idade do atleta:", atletaAndre.obtemIdadeAtleta())
+console.log("Peso do atleta:", atletaAndre.obtemPesoAtleta())
+console.log("Notas do atleta:", atletaAndre.obtemNotasAtleta())
 console.log("Categoria do Atleta:", atletaAndre.calculaCategoria())
 console.log("IMC do atleta:", atletaAndre.calculaIMC())
 console.log("Media do atleta:", atletaAndre.calculaMediaValida())
