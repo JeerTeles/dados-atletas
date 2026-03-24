@@ -66,24 +66,37 @@ class Atleta {
     }
 
     obtemCategoria() {
-
+        return this.calculaCategoria()
     }
 
     obtemIMC() {
-
+        return this.calculaIMC()
     }
 
     obtemMediaValida() {
-
+        return this.calculaMediaValida()
     }
 }
+const atleta = new Atleta("Cesar Abascal",30, 80, 1.70,[10, 9.34, 8.42, 10, 7.88])
+console.log("------- Dados do atleta -----------")
+console.log("Nome:", atleta.obtemNomeAtleta())
+console.log("Idade:", atleta.obtemIdadeAtleta())
+console.log("Peso:", atleta.obtemPesoAtleta())
+console.log("Altura:", atleta.altura)
+console.log("Notas:", atleta.obtemNotasAtleta())
+console.log("Categoria:", atleta.obtemCategoria())
+console.log("IMC:", atleta.calculaIMC())
+console.log("Media valida:", atleta.calculaMediaValida())
+console.log("")
 
 const atletaAndre = new Atleta("André", 28, 65, 1.50, [10, 9, 8, 5, 7])
 console.log("------- Dados do atleta -----------")
-console.log("Nome do atleta:", atletaAndre.obtemNomeAtleta())
-console.log("Idade do atleta:", atletaAndre.obtemIdadeAtleta())
-console.log("Peso do atleta:", atletaAndre.obtemPesoAtleta())
-console.log("Notas do atleta:", atletaAndre.obtemNotasAtleta())
-console.log("Categoria do Atleta:", atletaAndre.calculaCategoria())
-console.log("IMC do atleta:", atletaAndre.calculaIMC())
-console.log("Media do atleta:", atletaAndre.calculaMediaValida())
+console.log("Nome:", atletaAndre.obtemNomeAtleta())
+console.log("Idade:", atletaAndre.obtemIdadeAtleta())
+console.log("Peso:", atletaAndre.obtemPesoAtleta())
+console.log("Altura:", atletaAndre.altura)
+console.log("Notas:", atletaAndre.obtemNotasAtleta())
+console.log("Categoria:", atletaAndre.obtemCategoria())
+console.log("IMC:", atletaAndre.calculaIMC())
+console.log("Media valida:", atletaAndre.calculaMediaValida())
+console.log("\n")
