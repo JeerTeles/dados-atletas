@@ -37,3 +37,14 @@ Este projeto utiliza **Programação Orientada a Objetos** em JavaScript para ge
 3. Execute o arquivo usando o Node.js:
     ```node.js
     node seu_arquivo.js
+
+📝 Exemplo de Saída no Console
+------- Dados do atleta -----------
+Nome: Cesar Abascal
+Idade: 30
+Peso: 80
+Altura: 1.7
+Notas: 7.88, 8.42, 9.34, 10, 10
+Categoria: Adulto
+IMC: 27.68166089965398
+Media valida: 9.253333333333332    
