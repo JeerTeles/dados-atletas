@@ -34,6 +34,6 @@ Este projeto utiliza **Programação Orientada a Objetos** em JavaScript para ge
    ```javascript
    const meuAtleta = new Atleta("Nome", idade, peso, altura, [notas]);
 
-3.   Execute o arquivo usando o Node.js:
-Bash
-node seu_arquivo.js
+3. Execute o arquivo usando o Node.js:
+    ```node.js
+    node seu_arquivo.js
