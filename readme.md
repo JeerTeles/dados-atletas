@@ -33,3 +33,5 @@ Este projeto utiliza **Programação Orientada a Objetos** em JavaScript para ge
 2. Instancie um novo atleta passando os parâmetros:
    ```javascript
    const meuAtleta = new Atleta("Nome", idade, peso, altura, [notas]);
+
+3.   Execute o arquivo usando o Node.js:
